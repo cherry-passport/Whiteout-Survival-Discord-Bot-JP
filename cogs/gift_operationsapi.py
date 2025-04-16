@@ -143,15 +143,15 @@ class GiftCodeAPI:
                                         admin_ids = self.settings_cursor.fetchall()
                                         if admin_ids:
                                             admin_embed = discord.Embed(
-                                                title="🎁 New Gift Code Found!",
+                                                title="🎁新しいギフトコードが見つかりました!",
                                                 description=(
-                                                    f"**Gift Code Details**\n"
+                                                    f"**ギフトコードの詳細**\n"
                                                     f"━━━━━━━━━━━━━━━━━━━━━━\n"
-                                                    f"🎁 **Code:** `{code}`\n"
-                                                    f"📅 **Date:** `{formatted_date}`\n"
-                                                    f"📝 **Status:** `Retrieved from Reloisback API`\n"
-                                                    f"⏰ **Time:** <t:{int(datetime.now().timestamp())}:R>\n"
-                                                    f"🔄 **Auto Alliance Count:** `{len(auto_alliances)}`\n"
+                                                    f"🎁 **コード:** `{code}`\n"
+                                                    f"📅 **日付:** `{formatted_date}`\n"
+                                                    f"📝 **ステータス:** `開発中`\n"
+                                                    f"⏰ **時間:** <t:{int(datetime.now().timestamp())}:R>\n"
+                                                    f"🔄 **自動アライアンス数:** `{len(auto_alliances)}`\n"
                                                     f"━━━━━━━━━━━━━━━━━━━━━━\n"
                                                 ),
                                                 color=discord.Color.green()
